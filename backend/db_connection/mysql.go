@@ -1,4 +1,4 @@
-package authentication
+package dbconnection
 
 
 // backend authentication and database connection
@@ -12,7 +12,7 @@ import (
 var DB *sql.DB
 
 // InitDB sets up the connection to MySQL
-func InitDB() {
+func InitMySQL() {
 	var err error
 	dsn := "root:root@tcp(127.0.0.1:3333)/web_go"
 	
